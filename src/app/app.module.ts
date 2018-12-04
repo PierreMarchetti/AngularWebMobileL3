@@ -7,16 +7,8 @@ import { AppComponent } from './app.component';
 import { NgbdCarouselBasic } from './big-img/big-img.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
-  providers: [],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule, NgbModule],
+  declarations: [AppComponent, NgbdCarouselBasic],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
