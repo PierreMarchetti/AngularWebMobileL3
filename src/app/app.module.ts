@@ -6,15 +6,18 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import { NgbdCarouselBasic } from './big-img/big-img.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-
+    NgbdCarouselBasic
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     AppRoutingModule,
     NgbModule,
     AngularFontAwesomeModule
